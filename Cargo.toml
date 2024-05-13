@@ -1,6 +1,6 @@
 [package]
 name = "rk-utils"
-version = "0.2.1"
+version = "0.2.2"
 edition = "2021"
 
 authors = ["Rockie Guo <rockie@kitmi.com.au>"]
@@ -15,3 +15,7 @@ documentation = "https://docs.rs/rk-utils"
 
 [lib]
 doctest = false
+
+[profile]
+bench = {lto = true}
+release = {lto = true}

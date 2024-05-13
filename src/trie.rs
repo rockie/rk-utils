@@ -1,10 +1,18 @@
 use std::collections::HashMap;
 
 /// TrieNode is a node in a Trie.
-#[derive(Default)]
 pub struct TrieNode<'a, T> {
     children: HashMap<&'a str, TrieNode<'a, T>>,
     data: Option<T>,
+}
+
+impl<'a, T> Default for TrieNode<'a, T> {
+    fn default() -> Self {
+        Self {
+            children: HashMap::new(),
+            data: None,
+        }
+    }
 }
 
 /// Trie is a data structure that stores a set of strings.
@@ -26,13 +34,13 @@ pub struct Trie<'a, T> {
     root: TrieNode<'a, T>,
 }
 
-impl<'a, T: Default> Default for Trie<'a, T> {
+impl<'a, T> Default for Trie<'a, T> {
     fn default() -> Self {
         Self::new()
     }
 }
 
-impl<'a, T: Default> Trie<'a, T> {
+impl<'a, T> Trie<'a, T> {
     /// Create a new Trie.
     pub fn new() -> Self {
         Self {
