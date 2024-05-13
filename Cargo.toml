@@ -7,7 +7,7 @@ authors = ["Rockie Guo <rockie@kitmi.com.au>"]
 categories = ["Text processing", "Algorithms"]
 description = "A collection of utility functions and data structures for rust."
 
-keywords = ["utility", "string processing", "topological sorting", "trie", "longest match"]
+keywords = ["utility", "string_processing", "topological_sorting", "trie", "longest_match"]
 license = "MIT"
 readme = "README.md"
 repository = "https://github.com/rockie/rk-utils"
