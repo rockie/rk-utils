@@ -12,16 +12,16 @@ where
 
 /// Trie is a data structure that stores a set of strings.
 /// It is used to find the longest match of a string.
-/// 
+///
 /// # Example
-/// 
+///
 /// ```rust
 /// use rk_utils::Trie;
-/// 
+///
 /// let mut trie = Trie::new();
 /// trie.insert(vec!["a", "b", "c"], 1);
 /// trie.insert(vec!["a", "b", "d"], 2);
-/// 
+///
 /// assert_eq!(trie.find_longest_match(vec!["a", "b", "c", "d"]), Some(&1));
 /// assert_eq!(trie.find_longest_match(vec!["a", "b", "d", "e"]), Some(&2));
 /// ```
@@ -30,6 +30,12 @@ where
     T: Default,
 {
     root: TrieNode<'a, T>,
+}
+
+impl<'a, T: Default> Default for Trie<'a, T> {
+    fn default() -> Self {
+        Self::new()
+    }
 }
 
 impl<'a, T: Default> Trie<'a, T> {

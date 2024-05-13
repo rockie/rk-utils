@@ -42,7 +42,7 @@ mod trie;
 
 pub use crate::str::StringUtil;
 pub use crate::topo_sort::{ topo_sort, DepGraph };
-pub use crate::trie::{ Trie };
+pub use crate::trie::Trie;
 
 #[macro_export]
 macro_rules! to_matches {

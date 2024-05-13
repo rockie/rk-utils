@@ -2,7 +2,7 @@
 
 ![ci result](https://github.com/rockie/rk-utils/actions/workflows/ci.yml/badge.svg)
 
-A collection of utility functions and data structures.
+A collection of utility functions and data structures for rust.
 
 ## Features
 
