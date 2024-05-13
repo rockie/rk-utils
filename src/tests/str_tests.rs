@@ -34,3 +34,23 @@ fn is_quoted() {
     let quoted_str = "Hello World!";
     assert!(!quoted_str.is_quoted());
 }
+
+#[test]
+fn test_join_path_segments() {
+    assert_eq!(
+        "http://example.com".join_path_segments(vec!["/path"]),
+        "http://example.com/path"
+    );
+    assert_eq!(
+        "http://example.com".join_path_segments(vec!["path"]),
+        "http://example.com/path"
+    );
+    assert_eq!(
+        "http://example.com/".join_path_segments(vec!["path"]),
+        "http://example.com/path"
+    );
+    assert_eq!(
+        "http://example.com/".join_path_segments(vec!["/path"]),
+        "http://example.com/path"
+    );
+}

@@ -7,6 +7,7 @@ A collection of utility functions and data structures for rust.
 ## Features
 
 - `str`: String utilities
+  - `is_quoted`, `substring`, `unquote`, `url_to_nodes`, `ensure_prefix`, `ensure_suffix`, `drop_prefix`, `drop_suffix`, `join_path_segment`, `join_path_segments`
 - `topo_sort`: Topological sorting
 - `trie`: Trie data structure for longest matching a path of nodes
 

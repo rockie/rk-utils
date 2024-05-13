@@ -2,10 +2,7 @@ use std::collections::HashMap;
 
 /// TrieNode is a node in a Trie.
 #[derive(Default)]
-pub struct TrieNode<'a, T>
-where
-    T: Default,
-{
+pub struct TrieNode<'a, T> {
     children: HashMap<&'a str, TrieNode<'a, T>>,
     data: Option<T>,
 }
@@ -25,10 +22,7 @@ where
 /// assert_eq!(trie.find_longest_match(vec!["a", "b", "c", "d"]), Some(&1));
 /// assert_eq!(trie.find_longest_match(vec!["a", "b", "d", "e"]), Some(&2));
 /// ```
-pub struct Trie<'a, T>
-where
-    T: Default,
-{
+pub struct Trie<'a, T> {
     root: TrieNode<'a, T>,
 }
 
