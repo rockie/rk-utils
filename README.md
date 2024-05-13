@@ -17,7 +17,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-rk-utils = "0.1"
+rk-utils = "0.2"
 ```
 
 ## Examples

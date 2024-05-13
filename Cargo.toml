@@ -1,10 +1,10 @@
 [package]
 name = "rk-utils"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2021"
 
 authors = ["Rockie Guo <rockie@kitmi.com.au>"]
-categories = ["Text processing", "Algorithms"]
+categories = ["text-processing", "algorithms", "data-structures"]
 description = "A collection of utility functions and data structures for rust."
 
 keywords = ["utility", "string_processing", "topological_sorting", "trie", "longest_match"]
